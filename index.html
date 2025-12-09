@@ -21,9 +21,14 @@
 
         body {
             font-family: "Inter", sans-serif;
-            background: white;
+            background: #ffffff !important;
             color: var(--text);
             line-height: 1.7;
+            min-height: 100vh;
+        }
+
+        html {
+            background: #ffffff;
         }
 
         /* HEADER */
@@ -36,10 +41,14 @@
             max-width: 200px;
         }
 
-        /* HERO SECTION (PURE WHITE, NO DARK OVERLAY) */
+        /* HERO SECTION */
         .hero {
             height: 55vh;
-            background: url('https://i.ibb.co/Kj0q28Bn/Screenshot-2025-12-09-at-1-08-16-AM.png') center/cover no-repeat;
+            background-color: #ffffff;
+            background-image: url('https://i.ibb.co/Kj0q28Bn/Screenshot-2025-12-09-at-1-08-16-AM.png');
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
             border-bottom: 1px solid var(--line);
             display: flex;
             align-items: center;
