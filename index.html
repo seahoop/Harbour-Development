@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harbour Development | Seattle Real Estate Development</title>
+
+    <style>
+        :root {
+            --text: #1a1a1a;
+            --subtext: #555;
+            --line: #e6e6e6;
+            --max-width: 1100px;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Inter", sans-serif;
+            background: white;
+            color: var(--text);
+            line-height: 1.7;
+        }
+
+        /* HEADER */
+        header {
+            padding: 26px 20px;
+            border-bottom: 1px solid var(--line);
+        }
+
+        header img {
+            max-width: 200px;
+        }
+
+        /* HERO SECTION (PURE WHITE, NO DARK OVERLAY) */
+        .hero {
+            height: 55vh;
+            background: url('https://i.ibb.co/Kj0q28Bn/Screenshot-2025-12-09-at-1-08-16-AM.png') center/cover no-repeat;
+            border-bottom: 1px solid var(--line);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 0 20px;
+        }
+
+        .hero-content h1 {
+            font-family: "Georgia", serif;
+            font-size: 46px;
+            margin-bottom: 10px;
+            color: white; /* If you want black text, upload a lighter header image */
+        }
+
+        .hero-content p {
+            font-size: 20px;
+            color: white;
+            opacity: 0.95;
+        }
+
+        /* SECTIONS */
+        .section {
+            max-width: var(--max-width);
+            margin: 0 auto;
+            padding: 70px 20px;
+            border-bottom: 1px solid var(--line);
+        }
+
+        .section h2 {
+            font-family: "Georgia", serif;
+            font-size: 34px;
+            margin-bottom: 20px;
+            color: #000;
+            font-weight: 600;
+        }
+
+        .section p,
+        .section li {
+            font-size: 18px;
+            color: var(--subtext);
+        }
+
+        ul {
+            margin-top: 12px;
+            padding-left: 24px;
+        }
+
+        /* GALLERY */
+        .gallery {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 24px;
+            margin-top: 30px;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: 380px;
+            object-fit: cover;
+            border-radius: 4px;
+            border: 1px solid var(--line);
+            cursor: pointer;
+        }
+
+        .center-btn {
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        /* PRIVATE EQUITY STYLE BUTTON */
+        .btn {
+            text-decoration: none;
+            padding: 12px 28px;
+            border: 1px solid #000;
+            color: #000;
+            background: white;
+            font-size: 17px;
+            border-radius: 4px;
+            display: inline-block;
+            transition: 0.15s ease-in-out;
+        }
+
+        .btn:hover {
+            background: #000;
+            color: white;
+        }
+
+        /* FOOTER — WHITE, MINIMAL */
+        footer {
+            text-align: center;
+            padding: 35px 20px;
+            font-size: 14px;
+            color: #777;
+            background: white;
+        }
+
+        @media (max-width: 768px) {
+            .gallery {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <img src="https://i.ibb.co/h1ZjGRH7/Harbour-Logo.png" alt="Harbour Development Logo">
+</header>
+
+<section class="hero">
+    <div class="hero-content">
+        <h1>Harbour Development</h1>
+        <p>Seattle-based residential and industrial real estate investment</p>
+    </div>
+</section>
+
+<section class="section">
+    <h2>About Harbour Development</h2>
+    <p>
+        Harbour Development is a Seattle real estate investment company focused on value-add residential, multifamily,
+        DADU, and small-bay industrial assets. We acquire properties, improve them through disciplined construction, 
+        and hold them as long-term rentals that build enduring value.
+    </p>
+</section>
+
+<section class="section">
+    <h2>What We Do</h2>
+    <ul>
+        <li><strong>Acquisitions</strong> — Identifying undervalued properties with long-term upside</li>
+        <li><strong>Renovation & Development</strong> — Efficient construction across residential and heavy industrial</li>
+        <li><strong>Long-Term Ownership</strong> — Holding assets for stable cashflow and appreciation</li>
+        <li><strong>Industrial Expansion</strong> — Growing into industrial development</li>
+    </ul>
+</section>
+
+<section class="section">
+    <h2>Featured Project: 9002 Corliss Ave N</h2>
+    <p>
+        A full redevelopment of a Green Lake property, including interior, exterior renovation and a new 1,000 sqft DADU 
+        on the side lot as part of our value-add strategy.
+    </p>
+
+    <div class="gallery">
+        <img src="https://i.ibb.co/xtqzyPwL/Screenshot-2025-12-09-at-1-01-50-AM.png" 
+             onclick="window.open('https://www.redfin.com/WA/Seattle/9002-Corliss-Ave-N-98103/home/104702', '_blank')">
+
+        <img src="https://i.ibb.co/BVjmzVd8/IMG-2440.avif"
+             onclick="window.open('https://www.redfin.com/WA/Seattle/9002-Corliss-Ave-N-98103/home/104702', '_blank')">
+    </div>
+
+    <div class="center-btn">
+        <a class="btn" href="https://www.redfin.com/WA/Seattle/9002-Corliss-Ave-N-98103/home/104702" target="_blank">
+            View Listing
+        </a>
+    </div>
+</section>
+
+<footer>
+    © 2025 Harbour Development. All rights reserved.
+</footer>
+
+</body>
+</html>
